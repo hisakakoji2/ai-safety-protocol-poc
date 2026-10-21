@@ -12,6 +12,8 @@ A working proof of concept of an AI safety protocol in which **cheating never pa
 
 The same weights give an unbiased estimate of total damage from the audited sample alone (Horvitz–Thompson), which is the basis for an insurance premium.
 
+**[Architecture diagrams](ARCHITECTURE.md)** show the parties involved, the flow of one audit period, how each kind of cheating is caught, and the code structure.
+
 ## Run it
 
 Requires Python 3.10+.
@@ -78,6 +80,8 @@ This is a proof of concept, not production software.
 | 罰金の式 | 罰金 = 損害 ÷(監査確率 × 発見率)。罰金の期待値は損害額と等しくなる | Becker(1968) |
 
 同じ重みを使うと、監査したサンプルだけから事故の総額を偏りなく推定でき(Horvitz–Thompson推定)、保険料の根拠になります。
+
+**[アーキテクチャ図](ARCHITECTURE_ja.md)** で、関係者、1回の監査期間の流れ、不正の見抜き方、コードの構成を確認できます。
 
 ### 動かし方
 
